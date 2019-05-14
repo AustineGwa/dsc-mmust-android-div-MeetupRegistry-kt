@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/regtoolbar"
+            app:titleTextColor="#fff"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    </android.support.v7.widget.Toolbar>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/firstName"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintHorizontal_bias="0.503"
+            android:hint="Enter your first name"
+            android:layout_marginTop="36dp"
+            app:layout_constraintTop_toBottomOf="@+id/formLabel"/>
+    <TextView
+            android:text="Android Meetup  registration Form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/formLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/regtoolbar"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/lastName"
+            app:layout_constraintEnd_toEndOf="@+id/firstName"
+            app:layout_constraintStart_toStartOf="@+id/firstName"
+            android:hint="enter last name "
+            android:layout_marginTop="28dp"
+            app:layout_constraintTop_toBottomOf="@+id/firstName"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/Date"
+            app:layout_constraintEnd_toEndOf="@+id/lastName"
+            app:layout_constraintStart_toStartOf="@+id/lastName"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/lastName"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:hint="Enter date"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/regNumber"
+            app:layout_constraintEnd_toEndOf="@+id/Date"
+            app:layout_constraintStart_toStartOf="@+id/Date"
+            android:layout_marginTop="36dp"
+            app:layout_constraintTop_toBottomOf="@+id/Date"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:hint="Enter reg number"/>
+    <Button
+            android:text="SUBMIT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:id="@+id/submit"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/regNumber"
+            app:layout_constraintEnd_toEndOf="@+id/regNumber"
+            app:layout_constraintStart_toStartOf="@+id/regNumber"/>
+
+</android.support.constraint.ConstraintLayout>
